@@ -1,4 +1,3 @@
-/* === Mise en forme générale === */
 body {
   background-color: aquamarine;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -6,7 +5,7 @@ body {
   text-align: justify;
 }
 
-/* === Header et footer === */
+
 header, footer {
   background-image: url("../img/Green-IT.webp");
   justify-content: center;
@@ -14,7 +13,7 @@ header, footer {
   text-align: center;
 }
 
-/* === Image du header === */
+
 header img {
   width: 100%;
   height: auto;
@@ -42,7 +41,7 @@ h2 ~ h3 {
   color: blue;
 }
 
-/* === Barre de navigation === */
+
 nav {
   display: block;
   padding: 10px;
@@ -50,7 +49,7 @@ nav {
   text-align: center;
 }
 
-/* === Liens généraux === */
+
 a {
   text-decoration-line: none;
   color: white;
@@ -58,12 +57,12 @@ a {
   padding: 8px 12px;
 }
 
-/* === Effet au survol === */
+
 a:hover {
   background-color: blueviolet;
 }
 
-/* === Liens dans la barre de navigation === */
+
 nav a {
   font-size: large;
   margin: 5px;
@@ -85,13 +84,13 @@ nav a:nth-child(4):hover {
   background-color: darkblue;
 }
 
-/* === Liens dans les sections === */
+
 section a {
   color: hotpink;
   font-style: italic;
 }
 
-/* === Responsive design === */
+
 @media screen and (max-width: 600px) {
   nav a {
     display: block;
@@ -107,7 +106,7 @@ section a {
     width: 95%;
   }
 }
-/* === Étape 3 : Sélecteurs d’ID et classes === */
+/*  Étape 3 : */
 
 /* Paragraphe de citation */
 #citation {
@@ -165,7 +164,7 @@ section a {
 #postit .postit-item:nth-child(4) { background-color: #ffd; }
 #postit .postit-item:nth-child(5) { background-color: #dff; }
 
-/* === Étape 4 : Tableaux, formulaires et page À propos === */
+/* Étape 4 : */
 
 /* Tableau (greenit.html) */
 table {
@@ -225,7 +224,7 @@ section strong {
   color: darkblue;
 }
 
-/* === Étape 5 : Responsive design === */
+/* Étape 5 :  */
 @media screen and (max-width: 600px) {
   nav a {
     display: block;
@@ -244,4 +243,5 @@ section strong {
   table {
     font-size: 14px;
   }
+
 }
