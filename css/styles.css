@@ -1,0 +1,247 @@
+/* === Mise en forme générale === */
+body {
+  background-color: aquamarine;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* === Header et footer === */
+header, footer {
+  background-image: url("../img/Green-IT.webp");
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+/* === Image du header === */
+header img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* === Sections === */
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+  padding: 15px;
+}
+
+/* === Titres === */
+h1 {
+  color: blueviolet;
+}
+
+section h2 {
+  color: brown;
+}
+
+h2 ~ h3 {
+  color: blue;
+}
+
+/* === Barre de navigation === */
+nav {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* === Liens généraux === */
+a {
+  text-decoration-line: none;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+/* === Effet au survol === */
+a:hover {
+  background-color: blueviolet;
+}
+
+/* === Liens dans la barre de navigation === */
+nav a {
+  font-size: large;
+  margin: 5px;
+}
+
+nav a:first-child:hover {
+  background-color: darkgreen;
+}
+
+nav a:nth-child(2):hover {
+  background-color: darkorange;
+}
+
+nav a:nth-child(3):hover {
+  background-color: darkred;
+}
+
+nav a:nth-child(4):hover {
+  background-color: darkblue;
+}
+
+/* === Liens dans les sections === */
+section a {
+  color: hotpink;
+  font-style: italic;
+}
+
+/* === Responsive design === */
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 95%;
+  }
+}
+/* === Étape 3 : Sélecteurs d’ID et classes === */
+
+/* Paragraphe de citation */
+#citation {
+  color: darkgreen;
+  font-style: italic;
+  background-color: #e8f5e9;
+  border-left: 5px solid green;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Liste post-it */
+#postit {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+/* Élément de post-it */
+.postit-item {
+  background-color: #fef3bd;
+  border: 2px solid #e6c200;
+  position: relative;
+  width: 250px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Sous-listes cachées */
+.postit-item ul {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+/* Affichage au survol */
+.postit-item:hover ul {
+  display: block;
+}
+
+/* Couleurs différentes selon la position */
+#postit .postit-item:nth-child(1) { background-color: #fdd; }
+#postit .postit-item:nth-child(2) { background-color: #dfd; }
+#postit .postit-item:nth-child(3) { background-color: #ddf; }
+#postit .postit-item:nth-child(4) { background-color: #ffd; }
+#postit .postit-item:nth-child(5) { background-color: #dff; }
+
+/* === Étape 4 : Tableaux, formulaires et page À propos === */
+
+/* Tableau (greenit.html) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+caption {
+  font-weight: bold;
+  color: darkred;
+  margin-bottom: 10px;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #a5d6a7;
+}
+tr:nth-child(even) {
+  background-color: #f1f8e9;
+}
+
+/* Formulaire (QuizGreenIT.html) */
+form {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Page À propos */
+section p {
+  font-style: italic;
+}
+section strong {
+  color: darkblue;
+}
+
+/* === Étape 5 : Responsive design === */
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
